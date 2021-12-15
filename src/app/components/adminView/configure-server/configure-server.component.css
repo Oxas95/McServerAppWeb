@@ -1,0 +1,10 @@
+input[type="text"], input[type="number"] {
+    width: 219px;
+    padding: 10px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+button {
+    width: 350px;
+}

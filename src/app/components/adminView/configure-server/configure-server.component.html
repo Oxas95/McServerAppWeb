@@ -1,0 +1,36 @@
+<form id = "donnees" class = "spacer">
+    <h3 class = "mcText VA spacer">
+      Informations du serveur :
+    </h3>
+    <table class="centering">
+        <tbody>
+            <tr>
+                <td class = "mcText VA noCentering">Adresse Ip du serveur : </td>
+                <td>
+                    <input id = "adresseIp" class = "mcInput VA" type = "text" placeholder = "***.***.***.***"
+                    pattern = "((((25[0-5])|(2[0-4][0-9])|([0-1][0-9][0-9])|([0-9]{1,2}))\.){3}((25[0-5])|(2[0-4][0-9])|([0-1][0-9][0-9])|([0-9]{1,2})))|[0-9a-fA-f:]+"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td class = "mcText VA noCentering">Port du serveur : </td>
+                <td><input id = "portServer" class = "mcInput VA" type = "number" placeholder = "*****" min="0" max="65535"/></td>
+            </tr>
+            <tr>
+                <td class = "mcText VA noCentering">Port pour le protocol Rcon : </td>
+                <td><input id = "portRcon"  class = "mcInput VA" type = "number" placeholder = "*****" min="0" max="65535"/></td>
+            </tr>
+            <tr>
+                <td class = "mcText VA noCentering">Port pour le protocol Query : </td>
+                <td><input id = "portQuery" class = "mcInput VA" type = "number" placeholder = "*****" min="0" max="65535"/></td>
+            </tr>
+            <tr>
+                <td class = "mcText VA noCentering">Port pour l'application distante : </td>
+                <td><input id = "portApp" class = "mcInput VA" type = "number" placeholder = "*****" min="0" max="65535"/></td>
+            </tr>
+            <tr>
+                <td colspan = "2"><button id="valider" class = "mcButton" type="submit">Valider</button></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

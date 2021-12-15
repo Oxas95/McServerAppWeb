@@ -1,1 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
+
+.centering {
+  margin: auto;
+  text-align: center;
+}
+
+.noCentering {
+  text-align: left;
+}
+
+button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.VA {
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.HA {
+  text-align: center;
+}
+
+.spacer {
+  margin-top: 30px;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.mediumText {
+  font-size: 25px;
+  width: 50%;
+  height: 60%;
+}
+
+/* Minecraft style*/
+.mcGui {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 10px solid;
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fcolor-gui.png?v=1595254880168);
+    border-color: white #555555 #555555 white;
+    padding-bottom: 10px;
+  }
+  
+  .mcTitle {
+    font-family: "minecraft-font";
+  }
+  
+  /*https://perishablepress.com/3d-text-shadow-css3/*/
+  .mcShadowTitle {
+    color: #666666;
+    text-shadow:
+      0 2px  1px #bbbbbb,
+      0 3px  0 #aaaaaa, 
+          0 4px  0 #999999,
+      0 5px  0 #909090,
+          0 6px  0 #888888,
+          0 7px  0 #7f7f7f, 
+          0 8px  0 #777777, 
+          0 9px  0 #6e6e6e, 
+          0 10px 0 #666666, 
+          0 12px 0 #5d5d5d, 
+          0 12px 0 #555555, 
+          0 14px 0 #4c4c4c, 
+          0 14px 0 #444444, 
+          0 16px 0 #3b3b3b,
+          0 16px 0 #333333, 
+          0 18px 7px #302314;
+  }
+  
+  .mcText {
+    font-family: "minecraft-font2";
+  }
+  
+  .mcInput {
+    border: 2px solid #A0A0A0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #ffffff;
+    font-family: "minecraft-font2";
+  }
+  
+  .mcButton {
+    overflow: hidden;
+    background-color: #444444;
+    border: 2px solid black;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 2px 2px #555555;
+    font-family: "minecraft-font2";
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Finactive-button.png?v=1595253877229);
+  }
+  
+  .mcButton:hover {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Factive-button.png?v=1595253875920);
+    color: #FFFFA0;
+  }
+  
+  .container {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fcontainer.png?v=1595282359637);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container:hover {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Factivated-container.png?v=1595282359746);
+  }
+  
+  @font-face {
+      font-family: "minecraft-font";
+      src: url('https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fminecraft-font.ttf?v=1595245866747');
+  }
+  
+  @font-face {
+      font-family: "minecraft-font2";
+      src: url('https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fminecraft-font2.otf?v=1595248146241');
+  }
+  
+  @font-face {
+      font-family: "minecraft-font2";
+      font-weight: bold;
+      src: url('https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fminecraft-font2-bold.otf?v=1595248949299');
+  }
+  
+  body {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2F2020-08-08_16.57.58.png?v=1596898855508);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }

@@ -1,0 +1,63 @@
+@media all and (orientation: portrait) {
+    .login-form {
+      width: 80%;
+      height: 60%;
+      margin: 0 auto;
+      padding: 2px 20px 20px 20px;
+    }
+    #LogoMinecraft {
+      font-weight: bold;
+      text-align: center;
+      font-size: 5vh;
+      margin: 20px 0px 20px 0px;
+    }
+    .login-form h1[id="title"] {
+      text-align: center;
+      color: #444444;
+      font-size: 4vh;
+      margin: 20px 0px 20px 0px;
+    }
+  }
+  
+  @media all and (orientation: landscape) {
+    .login-form {
+      width: 50%;
+      height: 60%;
+      margin: 0 auto;
+      padding: 2px 20px 20px 20px;
+    }
+    #LogoMinecraft {
+      font-weight: bold;
+      text-align: center;
+      font-size: 10vh;
+      margin: 20px 0px 20px 0px;
+    }
+    .login-form h1[id="title"] {
+      font-weight: bold;
+      text-align: center;
+      color: #444444;
+      font-size: 7vh;
+      margin: 20px 0px 20px 0px;
+    }
+  }
+  
+  .login-form input[type="password"],
+  .login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .login-form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 5px 0px;
+    font-size: 20px;
+  }
+  
+  .body {
+    font-size: 30px;
+  }
+  
+  

@@ -1,0 +1,24 @@
+#autorisationB {
+    background-repeat: no-repeat;
+    background-size: 52px 52px;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: none;
+    border: 0px;
+    border-color: transparent;
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 23px;
+}
+
+.accessOn {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2FcadenasON.png?v=1595252376261);
+}
+  
+.accessOff {
+    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2FcadenasOFF.png?v=1595252376980);
+}
+
+
+

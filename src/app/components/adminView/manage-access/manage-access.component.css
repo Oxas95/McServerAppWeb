@@ -1,0 +1,47 @@
+#listPlayers {
+    background-color: black;
+    color: white;
+    border: 3px solid;
+    border-color: #999999;
+    font-size: 20px;
+    margin: auto auto;
+    margin-bottom: 70px;
+}
+
+.tdPseudo {
+    text-align: left;
+}
+
+.tdChoisir {
+    text-align: right;
+}
+
+.buttonAccepter, .buttonRefuser, .buttonIgnorer {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    cursor: pointer;
+    padding: 0px;
+
+}
+
+.buttonIgnorer {
+    color: #0099ff;
+    margin-left: 15px;
+}
+
+.buttonAccepter {
+    color: #00dd00;
+    margin-left: 15px;
+}
+
+.buttonRefuser {
+    color: #dd0000;
+}
+
+#listPlayers {
+    width: 350px;
+}
