@@ -10,19 +10,10 @@ import { PlayerSessionService } from 'src/app/services/player-session/player-ses
 })
 export class AccueilComponent implements OnInit {
 
-  session: PlayerSession;
-
   constructor(
     private router: Router,
     private playerSession: PlayerSessionService,
-  ) {
-    this.session = this.playerSession.getSession();
-  }
+  ) { }
 
-  ngOnInit(): void {
-    if(!this.playerSession.isActive()) {
-      this.playerSession.clearSession();
-      this.router.navigateByUrl("/login");
-    }
-  }
+  ngOnInit(): void { }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayerSession } from 'src/app/interfaces/player-session';
+import { PlayerSessionService } from 'src/app/services/player-session/player-session.service';
 
 @Component({
   selector: 'app-player-access',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerAccessComponent implements OnInit {
 
-  constructor() { }
+  session?: PlayerSession;
+
+  constructor(
+    private playerSessionService: PlayerSessionService
+  ) { }
 
   ngOnInit(): void {
+    this.session = this.playerSessionService.getSession();
   }
 
 }

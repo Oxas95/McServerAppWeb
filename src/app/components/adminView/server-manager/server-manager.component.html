@@ -1,12 +1,13 @@
 <div id = "mainGui" class = "mcGui mediumText">
     <div class="centering">
-        <a routerLink="/"><button class = "mcButton VA spacer">Retour</button></a>
+        <a routerLink="/accueil"><button class = "mcButton VA spacer">Retour</button></a>
+        <a routerLink="/manage/rcon"><button class = "mcButton VA spacer">CMD</button></a>
+        <a routerLink="/manage/launch"><button class = "mcButton VA spacer">Launch</button></a>
+        <a routerLink="/manage/configure"><button class = "mcButton VA spacer">Configure</button></a>
+        <a routerLink="/manage/access"><button class = "mcButton VA spacer">Accès</button></a>
         <h2 class = "mcText VA spacer">
           Gestion du serveur :
         </h2>
-        <app-launch-server></app-launch-server>
-        <app-configure-server></app-configure-server>
-        <app-cmd-sender></app-cmd-sender>
+        
     </div>
-    <app-manage-access></app-manage-access>
   </div>

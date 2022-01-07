@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PlayerSession } from '../../../interfaces/player-session';
 import { PlayerSessionService } from '../../../services/player-session/player-session.service';
@@ -10,22 +10,22 @@ import { PlayerSessionService } from '../../../services/player-session/player-se
 })
 export class LoginComponent implements OnInit {
 
-  pseudo: string = "";
+  @Input() pseudo: string = "";
 
   constructor(
     private router: Router,
-    private playerSession: PlayerSessionService,
-  ) {
-    if (this.playerSession.isActive()) {
-      router.navigateByUrl("/accueil");
-    }
+    private playerSessionService: PlayerSessionService,
+  ) { }
+
+  ngOnInit(): void {
   }
 
-  ngOnInit(): void {}
-
   onValid() {
-    this.playerSession.setSession( { pseudo: this.pseudo, token: "token !", access: 0 } );
-    this.router.navigateByUrl("/");
+    alert("valider !")
+    this.playerSessionService.login(this.pseudo);
+    let session = this.playerSessionService.getSession();
+    alert(`${this.pseudo}, ${session.token} ${session.access}`);
+    this.router.navigateByUrl("/accueil");
   }
 
 }

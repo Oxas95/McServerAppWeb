@@ -15,6 +15,9 @@ import { PlayerAccessComponent } from './components/userView/player-access/playe
 import { UserMenuComponent } from './components/userView/user-menu/user-menu.component'; 
 import { AccueilComponent } from './components/userView/accueil/accueil.component'; 
 import { PlayerStatusComponent } from './components/userView/player-status/player-status.component'; 
+import { AdminRoutingModule } from './modules/admin/admin-routing.module';
+import { AuthRoutingModule } from './modules/auth/auth-routing.module';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { PlayerStatusComponent } from './components/userView/player-status/playe
     UserMenuComponent,
     AccueilComponent,
     PlayerStatusComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AdminRoutingModule,
+    AuthRoutingModule,
   ],
   exports: [
   ],

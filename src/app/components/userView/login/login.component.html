@@ -1,19 +1,18 @@
 <div id="LogoMinecraft" class = "mcTitle mcShadowTitle">
     Minecraft Server
-  </div>
-  <div class="login-form mcText mcGui VA HA">
+</div>
+<div class="login-form mcText mcGui VA HA">
     <h1 id="title">Connexion</h1>
-    <form id="form" method ="get">
-      <input
-        id="username"
-        class = "mcInput"
-        type="text"
-        pattern = "[a-zA-Z0-9_]{3,}"
-        title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
-        placeholder="Entrez votre pseudonyme Minecraft"
-        required
-      />
-      <p id="loginResult"></p>
-      <button id="valider" class = "mcButton" [(ngModel)]="pseudo" (click)="onValid()">Valider</button>
-    </form>
-  </div>
+    <input
+      [(ngModel)]="pseudo"
+      id="session-pseudo"
+      class = "mcInput"
+      type="text"
+      pattern = "[a-zA-Z0-9_]{3,}"
+      title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
+      placeholder="Entrez votre pseudonyme Minecraft"
+      required
+    />
+    <p id="loginResult"></p>
+    <button class="mcButton" (click)="onValid()">Valider</button>
+</div>

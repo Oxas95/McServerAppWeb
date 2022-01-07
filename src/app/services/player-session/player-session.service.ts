@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { PlayerSession } from 'src/app/interfaces/player-session';
 
 @Injectable({
@@ -10,15 +11,20 @@ export class PlayerSessionService {
 
   constructor() { }
 
-  setSession(player: PlayerSession) {
-    this.playerSession = player;
+  login(pseudo: string) {
+    //not yet implemented
+    this.playerSession = { //simulate login
+      pseudo: pseudo,
+      token: '0000',
+      access: 3,
+    };
   }
 
-  getSession(): PlayerSession {
+  getSession(): PlayerSession  {
     return this.playerSession;
   }
 
-  clearSession() {
+  logout() {
     this.playerSession = this.getEmptyPlayerSession();
   }
 
@@ -30,7 +36,13 @@ export class PlayerSessionService {
     };
   }
 
-  isActive() {
-    return this.playerSession.pseudo! && this.playerSession.token! && this.playerSession.access!;
+  isActive(): boolean {
+    return this.playerSession.pseudo != "" 
+      && this.playerSession.token != ""
+      && this.playerSession.access != undefined;
+  }
+
+  isValid() {
+    // TODO: not yet implemented
   }
 }

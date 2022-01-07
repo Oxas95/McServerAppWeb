@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { PlayerSession } from 'src/app/interfaces/player-session';
+import { PlayerSessionService } from 'src/app/services/player-session/player-session.service';
 
 @Component({
   selector: 'app-user-menu',
@@ -8,13 +10,19 @@ import { Router } from '@angular/router';
 })
 export class UserMenuComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  session?: PlayerSession;
+
+  constructor(
+    private playerSessionService: PlayerSessionService,
+    private router: Router,
+    ) { }
 
   ngOnInit(): void {
+    this.session = this.playerSessionService.getSession();
   }
 
   disconnect() {
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("/login");
   }
 
 }
