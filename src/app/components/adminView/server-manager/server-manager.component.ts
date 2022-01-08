@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerManagerComponent implements OnInit {
 
+  item: string = "default";
+
   constructor() { }
 
   ngOnInit(): void { }

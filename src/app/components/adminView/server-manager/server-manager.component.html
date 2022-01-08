@@ -1,13 +1,20 @@
-<div id = "mainGui" class = "mcGui mediumText">
-    <div class="centering">
-        <a routerLink="/accueil"><button class = "mcButton VA spacer">Retour</button></a>
-        <a routerLink="/manage/rcon"><button class = "mcButton VA spacer">CMD</button></a>
-        <a routerLink="/manage/launch"><button class = "mcButton VA spacer">Launch</button></a>
-        <a routerLink="/manage/configure"><button class = "mcButton VA spacer">Configure</button></a>
-        <a routerLink="/manage/access"><button class = "mcButton VA spacer">Accès</button></a>
-        <h2 class = "mcText VA spacer">
-          Gestion du serveur :
-        </h2>
-        
-    </div>
+
+<div id="menu">
+  <ul id="onglets">
+    <li id="leftOnglet" [class.active]="item==='run'" (click)="item='run'"><a> Start/Stop </a></li>
+    <li id="rightOnglet" [class.active]="item==='configuration'" (click)="item='configuration'"><a> Configuration </a></li>
+    <li id="rightOnglet" [class.active]="item==='cmd'" (click)="item='cmd'"><a> Commandes </a></li>
+    <li id="rightOnglet" [class.active]="item==='access'" (click)="item='access'"><a> Accès </a></li>
+    <li id="rightOnglet"><a routerLink="/"> Retour </a></li>
+    <li id="fakeBorder"></li>
+  </ul>
+</div>
+<div id = "mainGui" class = "mcGuiCustom mediumText">
+  <div class="centering" [ngSwitch]="item">
+    <app-launch-server *ngSwitchCase="'run'"></app-launch-server>
+    <app-configure-server *ngSwitchCase="'configuration'"></app-configure-server>
+    <app-cmd-sender *ngSwitchCase="'cmd'"></app-cmd-sender>
+    <app-manage-access *ngSwitchCase="'access'"></app-manage-access>
+    <app-configure-server *ngSwitchDefault></app-configure-server>
   </div>
+</div>

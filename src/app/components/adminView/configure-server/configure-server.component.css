@@ -8,3 +8,14 @@ input[type="text"], input[type="number"] {
 button {
     width: 350px;
 }
+
+div {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+}

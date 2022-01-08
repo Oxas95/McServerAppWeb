@@ -21,10 +21,9 @@ export class LoginComponent implements OnInit {
   }
 
   onValid() {
-    alert("valider !")
     this.playerSessionService.login(this.pseudo);
     let session = this.playerSessionService.getSession();
-    alert(`${this.pseudo}, ${session.token} ${session.access}`);
+    //alert(`${this.pseudo}, ${session.token} ${session.access}`);
     this.router.navigateByUrl("/accueil");
   }
 

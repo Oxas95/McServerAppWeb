@@ -46,7 +46,7 @@ input[type="text"], input[type="number"] {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border: 10px solid;
-    background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2Fcolor-gui.png?v=1595254880168);
+    background-color: #c6c6c6;
     border-color: white #555555 #555555 white;
     padding-bottom: 10px;
   }
