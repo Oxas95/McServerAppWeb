@@ -24,5 +24,4 @@ export class UserMenuComponent implements OnInit {
   disconnect() {
     this.router.navigateByUrl("/login");
   }
-
 }

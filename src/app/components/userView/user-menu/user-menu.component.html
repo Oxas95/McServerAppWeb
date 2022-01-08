@@ -1,7 +1,7 @@
-<nav id = "menu_user" class="centering">
+<nav>
     <div *ngIf="session!.access! > 2">
-        <button id="gestion" class = "mcButton VA" routerLink="/manage">Gestion du serveur</button>
+        <button routerLink="/manage">Gestion du serveur</button>
     </div>
     <app-player-access></app-player-access>
-    <button id="disconnect" class = "mcButton spacer" (click)="disconnect()">Se deconnecter</button>
+    <button (click)="disconnect()">Se deconnecter</button>
 </nav>

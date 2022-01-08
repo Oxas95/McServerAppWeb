@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
 
   @Input() pseudo: string = "";
 
+  title= "Minecraft Server"
+
   constructor(
     private router: Router,
     private playerSessionService: PlayerSessionService,

@@ -13,18 +13,6 @@ const routes: Routes = [
     path: 'manage',
     component: ServerManagerComponent,
     canActivate: [AuthGuard, AdminGuard],
-    children: [
-      { 
-        path: '', //component-less route
-        children: [
-          { path: 'launch', component: LaunchServerComponent },
-          { path: 'configure', component: ConfigureServerComponent },
-          { path: 'access', component: ManageAccessComponent },
-          { path: 'rcon', component: CmdSenderComponent},
-          { path: '', redirectTo: 'launch', pathMatch: 'full'}
-        ]
-      }
-    ]
   }
 ];
 

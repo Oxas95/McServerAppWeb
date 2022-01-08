@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-server-manager',
@@ -7,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerManagerComponent implements OnInit {
 
-  item: string = "default";
+  item: string = "";
 
   constructor() { }
 
-  ngOnInit(): void { }
-
+  ngOnInit(): void {  }
 }
