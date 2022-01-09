@@ -1,5 +1,22 @@
 @import './minecraft.css';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2F2020-08-08_16.57.58.png?v=1596898855508);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 12pt;
+  overflow: scroll;
+}
+
 /*https://perishablepress.com/3d-text-shadow-css3/*/
 .text3d {
   color: #666666;
@@ -20,4 +37,8 @@
       0 16px 0 #3b3b3b,
       0 16px 0 #333333, 
       0 18px 7px #302314;
+}
+
+* {
+  border: 1px red solid;
 }

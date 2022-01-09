@@ -1,18 +1,43 @@
 
-.mc-page {
-    width: 335px;
-    height: 200px;
+/*.mc-page {
+    --radius: 5px;
+    --radius2: calc(var(--radius) + 1px);
+    --radius3: calc(var(--radius2) + 1px);
     background: #c6c6c6;
-    border-radius: 3px;
-    box-shadow: 5px 5px 0px #555555, inset 4px 4px 0px #fefefe;
-    padding-top: 5px;
-    padding-left: 5px;
+    border-radius: var(--radius);
+    box-shadow: var(--radius3) var(--radius3) 0px #555555, inset var(--radius2) var(--radius2) 0px #fefefe;
+    padding-top: var(--radius3);
+    padding-left: var(--radius3);
     margin-bottom: 10px;
+    padding-bottom: 10px;
+}*/
+
+.mc-page {
+    --radius: 5px;
+    --radius2: calc(var(--radius) + 1px);
+    --radius3: calc(var(--radius2) + 1px);
+    background: #c6c6c6;
+    border-radius: var(--radius);
+    box-shadow: var(--radius3) var(--radius3) 0px #555555,
+    var(--radius2) var(--radius2) 0px #fefefe;
+    padding-top: var(--radius3);
+    padding-left: var(--radius3);
+    padding-bottom: 1%;
 }
 
+.mc-input {
+    border: 2px solid #A0A0A0;
+    box-sizing: border-box;
+    background-color: black;
+    color: #ffffff;
+    font-family: "Minecraftia";
+    padding: 1.5%;
+    font-size: 1.7vw;
+  }
 
 .mc-text {
     font-family: "Minecraftia";
+    font-size: 1.7vw;
 }
 
 .mc-title {
@@ -21,8 +46,7 @@
 
 /* Minecraft Style Button -> use : class=".mc-button .mc-title .mc-text .mc-full"   */
 .mc-button {
-    height: 30pt;
-    width: 300pt;
+    height: 5vw;
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
@@ -36,9 +60,7 @@
     color: #DDD;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
-
-    font-size: 12pt;
-}	
+}
 
 /* Mouse over */
 .mc-button:hover {

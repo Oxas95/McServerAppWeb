@@ -1,9 +1,10 @@
-<div>
+<div id="title-container">
   <h1 id="title" class="mc-title text3d">{{title}}</h1>
 </div>
-<div class="mc-page">
+<div id="mc-page" class="mc-page">
   <h2 class="mc-text">Connexion</h2>
   <input
+    class="mc-input mc-text"
     [(ngModel)]="pseudo"
     type="text"
     pattern = "[a-zA-Z0-9_]{3,}"
