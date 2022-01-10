@@ -1,17 +1,19 @@
-<div id="title-container">
-  <h1 id="title" class="mc-title text3d">{{title}}</h1>
-</div>
-<div id="mc-page" class="mc-page">
-  <h2 class="mc-text">Connexion</h2>
-  <input
-    class="mc-input mc-text"
-    [(ngModel)]="pseudo"
-    type="text"
-    pattern = "[a-zA-Z0-9_]{3,}"
-    title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
-    placeholder="Entrez votre pseudonyme Minecraft"
-    required
-  />
-  <p>resultat demande de connexion</p>
-  <button class="mc-text mc-button" (click)="onValid()">Valider</button>
-</div>
+<main>
+  <div id="title-container">
+    <h1 id="title" class="mc-title text3d">{{title}}</h1>
+  </div>
+  <div id="mc-page" class="mc-page">
+    <h2 class="mc-text">Connexion</h2>
+      <input
+        class="mc-input"
+        [(ngModel)]="pseudo"
+        type="text"
+        pattern = "[a-zA-Z0-9_]{3,}"
+        title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
+        placeholder="Entrez votre pseudo Minecraft"
+        required
+      />
+    <p>resultat demande de connexion</p>
+    <button class="mc-button" (click)="onValid()">Valider</button>
+  </div>
+</main>

@@ -6,6 +6,7 @@ div {
 #mc-page {
     max-width: 800px;
     width: 70%;
+    height: 100%;
 }
 
 #title-container {
@@ -15,20 +16,75 @@ div {
 
 .mc-input {
     width: 70%;
+    max-width: 600px;
+    font-size: 2vw;
+    padding: 2% 5% 2%;
 }
 
 .mc-button {
-    min-width: 200px;
     width: 45%;
     max-width: 400px;
+    font-size: 2vw;
 }
 
 h1 {
     font-size: 6vw;
-    margin-bottom: 12px;
-    width: 100%;
+    margin-bottom: calc(2vh + 2vw);
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 4vw;
+    padding-top: calc(2vw + 1vh);
+    padding-bottom: 2vw;
 }
+
+p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 775px) {
+    .text3d {
+        color: #666666;
+        text-shadow:
+            0 2px  1px #bbbbbb,
+            0 3px  0 #999999,
+            0 4px  0 #888888, 
+            0 5px  0 #777777, 
+            0 6px 0 #666666, 
+            0 7px 0 #555555, 
+            0 8px 0 #444444,
+            0 9px 0 #333333, 
+            0 10px 7px #302314;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text3d {
+        color: #666666;
+        text-shadow:
+            0 2px  1px #bbbbbb,
+            0 3px  0 #888888, 
+            0 4px 0 #666666, 
+            0 5px 0 #444444,
+            0 6px 7px #302314;
+    }
+}
+
+/*
+ 0 2px  1px #bbbbbb,
+            0 3px  0 #aaaaaa, 
+            0 4px  0 #999999,
+            0 5px  0 #909090,
+            0 6px  0 #888888,
+            0 7px  0 #7f7f7f, 
+            0 8px  0 #777777, 
+            0 9px  0 #6e6e6e, 
+            0 10px 0 #666666, 
+            0 12px 0 #5d5d5d, 
+            0 12px 0 #555555, 
+            0 14px 0 #4c4c4c, 
+            0 14px 0 #444444, 
+            0 16px 0 #3b3b3b,
+            0 16px 0 #333333, 
+            0 18px 7px #302314;
+*/
