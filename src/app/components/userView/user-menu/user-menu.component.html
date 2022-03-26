@@ -1,7 +1,9 @@
-<nav>
-    <div *ngIf="session!.access! > 2">
-        <button routerLink="/manage">Gestion du serveur</button>
+<nav [ngClass]="navClass">
+    <div  *ngIf="session!.access! !== 4">
+        <label class="mc-text">Acces au serveur : </label>
+        <button id="cadenas">{{session!.access!}}</button>
     </div>
-    <app-player-access></app-player-access>
-    <button (click)="disconnect()">Se deconnecter</button>
+    <button id="gestion" *ngIf="session!.access! === 4" class="mc-button" routerLink="/manage">Gestion du serveur</button>
+    
+    <button class="mc-button" (click)="onDisconnect()">Se deconnecter</button>
 </nav>

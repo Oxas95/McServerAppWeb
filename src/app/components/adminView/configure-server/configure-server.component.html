@@ -1,36 +1,50 @@
 <div>
     <div>
-        <h3>Informations du serveur :</h3>
+        <h3 class="mc-text">Informations du serveur :</h3>
     </div>
-    <div>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Adresse Ip du serveur :</td>
-                    <td>
-                        <input type = "text" placeholder = "***.***.***.***"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Port du serveur : </td>
-                    <td><input type = "number" placeholder = "*****" min="0" max="65535"/></td>
-                </tr>
-                <tr>
-                    <td>Port pour le protocol Rcon :</td>
-                    <td><input type = "number" placeholder = "*****" min="0" max="65535"/></td>
-                </tr>
-                <tr>
-                    <td>Port pour le protocol Query : </td>
-                    <td><input type = "number" placeholder = "*****" min="0" max="65535"/></td>
-                </tr>
-                <tr>
-                    <td>Port pour l'application distante : </td>
-                    <td><input type = "number" placeholder = "*****" min="0" max="65535"/></td>
-                </tr>
-                <tr>
-                    <td colspan = "2"><button type="submit">Valider</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="mc-text">Url du serveur :</td>
+                <td class="input-td">
+                    <input class="mc-input" type = "text" placeholder = "******.***"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text">Adresse Ip du serveur :</td>
+                <td class="input-td">
+                    <input class="mc-input" type = "text" placeholder = "***.***.***.***"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text">Port du serveur : </td>
+                <td class="input-td">
+                    <input class="mc-input" type = "number" placeholder = "*****" min="1000" max="65535"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text">Port pour le protocol Rcon :</td>
+                <td class="input-td">
+                    <input class="mc-input" type = "number" placeholder = "*****" min="1000" max="65535"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text">Port pour le protocol Query : </td>
+                <td class="input-td">
+                    <input class="mc-input" type = "number" placeholder = "*****" min="1000" max="65535"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text">Port pour l'application : </td>
+                <td class="input-td">
+                    <input class="mc-input" type = "number" placeholder = "*****" min="1000" max="65535"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="mc-text" colspan = "2">
+                    <button class="mc-button" type="submit">Valider</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>

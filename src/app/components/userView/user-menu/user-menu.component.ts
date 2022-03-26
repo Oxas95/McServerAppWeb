@@ -11,6 +11,7 @@ import { PlayerSessionService } from 'src/app/services/player-session/player-ses
 export class UserMenuComponent implements OnInit {
 
   session?: PlayerSession;
+  navClass: Record<string, boolean> = {};
 
   constructor(
     private playerSessionService: PlayerSessionService,
@@ -19,9 +20,18 @@ export class UserMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.session = this.playerSessionService.getSession();
+    this.setNavClass()
   }
 
-  disconnect() {
+  onDisconnect() {
+    this.playerSessionService.logout().subscribe();
     this.router.navigateByUrl("/login");
+  }
+
+  setNavClass() {
+    this.navClass = {
+      'menu-row': this.session?.access !== 4,
+      'menu-column': this.session?.access === 4,
+    }
   }
 }

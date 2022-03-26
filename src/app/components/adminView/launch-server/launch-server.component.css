@@ -1,0 +1,17 @@
+div {
+    text-align: center;
+}
+
+#buttonContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    margin-top: 2vw;
+}
+
+button {
+    width: 45%;
+}

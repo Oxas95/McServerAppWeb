@@ -1,5 +1,5 @@
 export interface PlayerSession {
-    pseudo: string,
+    username: string,
     token: string,
     access: number | undefined
 }

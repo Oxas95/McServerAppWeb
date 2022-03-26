@@ -1,23 +1,23 @@
-<div>
+<div id="onglets">
   <ul>
     <li [class.active]="item==='run'" (click)="item='run'">
-      <a> Start/Stop </a>
+      <p> Start/Stop </p>
     </li>
     <li [class.active]="item==='configuration'" (click)="item='configuration'">
-      <a> Configuration </a>
+      <p> Configuration </p>
     </li>
     <li [class.active]="item==='cmd'" (click)="item='cmd'">
-      <a> Commandes </a>
+      <p> Commandes </p>
     </li>
     <li [class.active]="item==='access'" (click)="item='access'">
-      <a> Accès </a>
+      <p> Accès </p>
     </li>
-    <li>
-      <a routerLink="/"> Retour </a>
+    <li routerLink="/">
+      <p> Retour </p>
     </li>
   </ul>
 </div>
-<div>
+<div class="mc-page">
   <div [ngSwitch]="item">
     <app-launch-server    *ngSwitchCase="'run'">          </app-launch-server>
     <app-configure-server *ngSwitchCase="'configuration'"></app-configure-server>

@@ -1,0 +1,30 @@
+.menu-column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.menu-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.menu-column, .menu-row {
+	width: 100%;
+}
+
+button[class="mc-button"] {
+	width: 45%;
+	margin-bottom: 2vw;
+}
+
+app-player-access {
+	width: 100%;
+}

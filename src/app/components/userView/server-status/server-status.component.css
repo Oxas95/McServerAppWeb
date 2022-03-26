@@ -1,0 +1,27 @@
+h2 {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: calc(4vw + 2%);
+    font-size: 2vw;
+    border: 0.22vw solid transparent;
+    font-family: "Minecraftia";
+    margin-left: 2%;
+    padding: 0;
+}
+
+#serverStatusContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    margin-bottom: 2vw;
+}

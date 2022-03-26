@@ -4,16 +4,22 @@
   </div>
   <div id="mc-page" class="mc-page">
     <h2 class="mc-text">Connexion</h2>
-      <input
-        class="mc-input"
-        [(ngModel)]="pseudo"
-        type="text"
-        pattern = "[a-zA-Z0-9_]{3,}"
-        title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
-        placeholder="Entrez votre pseudo Minecraft"
-        required
-      />
-    <p>resultat demande de connexion</p>
-    <button class="mc-button" (click)="onValid()">Valider</button>
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm, $event)" method="get" [action]="'https://api.minecraft.id/gateway/start/' + username">
+        <input
+          #username2="ngModel"
+          id="pseudo"
+          name="username"
+          class="mc-input"
+          [(ngModel)]="username"
+          type="text"
+          pattern = "[a-zA-Z0-9_]{3,}"
+          title = "Votre pseudonyme doit comporter au moins 3 caractères et ne peut contenir que des lettres, chiffres et le caractère underscore."
+          placeholder="Entrez votre pseudo Minecraft"
+          required
+        />
+        <input hidden readonly name=callback [value]="getCallback()"/>
+      <p *ngIf="error != undefined" class="mc-text">{{error}}</p>
+      <button class="mc-button" type="submit">Valider</button>
+    </form>
   </div>
 </main>

@@ -1,0 +1,56 @@
+.mc-page, #onglets {
+    width: 70%;
+    margin: auto auto;
+}
+
+#onglets {
+    margin: 5% auto 0px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+}
+
+li {
+    --radius: 0.75vw;
+    --radius2: -1vw;
+    --radius21: 1vw;
+    border-radius: var(--radius) var(--radius) 0px 0px;
+    box-shadow: inset calc(var(--radius2) * 2) var(--radius2) 0px var(--radius2) #555555,
+    var(--radius2) calc(var(--radius2) + 1px) 0px #fefefe;
+    padding-bottom: var(--radius2);
+    padding-right: var(--radius2);
+    padding-bottom: 1%;
+    border-bottom: var(--radius21) solid white;
+    background: #c6c6c6;
+    cursor: pointer;
+    list-style: none;
+    height: 7vw;
+    width: 7vw;
+    margin-right: var(--radius21);
+}
+
+.active {
+    border-bottom: none;
+}
+
+.mc-page {
+    --radius: 0.75vw;
+    --radius2: -1vw;
+    background: #c6c6c6;
+    border-radius: 0px var(--radius) var(--radius) var(--radius);
+    box-shadow: inset var(--radius2) var(--radius2) 0px #555555,
+    var(--radius2) var(--radius2) 0px #fefefe;
+    padding-right: var(--radius2);
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+app-configure-server {
+    width: 100%;
+}

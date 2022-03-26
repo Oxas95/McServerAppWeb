@@ -1,18 +1,25 @@
+.mc-array {
+    background-color: black;
+    color: white;
+    border: 0.35vw solid;
+    border-color: #999999;
+    margin: auto auto;
+}
+
 .mc-page {
-    --radius: 5px;
+    --radius: 0.75vw;
     --radius2: 1vw;
-    --radius3: calc(var(--radius2) + 1px);
     background: #c6c6c6;
     border-radius: var(--radius);
-    box-shadow: var(--radius3) var(--radius3) 0px #555555,
+    box-shadow: var(--radius2) var(--radius2) 0px #555555,
     inset var(--radius2) var(--radius2) 0px #fefefe;
-    padding-top: var(--radius3);
-    padding-left: var(--radius3);
+    padding-top: var(--radius2);
+    padding-left: var(--radius2);
     padding-bottom: 1%;
 }
 
 .mc-input {
-    border: 0.16vw solid #A0A0A0;
+    border: 0.22vw solid #A0A0A0;
     box-sizing: border-box;
     background-color: black;
     color: #ffffff;
@@ -20,10 +27,14 @@
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+
+    font-size: 2vw;
+    padding: 1% 5% 1%;
   }
 
 .mc-text {
     font-family: "Minecraftia";
+    font-size: 2vw;
 }
 
 .mc-title {
@@ -37,16 +48,18 @@
     white-space: nowrap;
 
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
-    border: 0.16vw solid #000;
+    border: 0.265vw solid #000;
     image-rendering: pixelated;
 
     padding-bottom: .3em;
 
     color: #DDD;
-    text-shadow: 2px 2px #000A;
-    box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+    text-shadow: 0.22vw 0.22vw #000A;
+    box-shadow: inset -0.22vw -0.44vw #0006, inset 0.22vw 0.22vw #FFF7;
 
     font-family: "Minecraftia";
+
+    font-size: 2vw;
 }
 
 /* Mouse over */

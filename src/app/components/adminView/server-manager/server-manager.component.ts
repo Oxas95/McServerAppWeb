@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ServerManagerComponent implements OnInit {
 
-  item: string = "";
+  item: string = "run";
 
   constructor() { }
 

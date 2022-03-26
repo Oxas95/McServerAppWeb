@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { PlayerSession } from '../../../interfaces/player-session';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PlayerSessionService } from '../../../services/player-session/player-session.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { AuthErrorsService } from 'src/app/services/auth-errors/auth-errors.service';
 
 @Component({
   selector: 'app-login',
@@ -10,23 +11,41 @@ import { PlayerSessionService } from '../../../services/player-session/player-se
 })
 export class LoginComponent implements OnInit {
 
-  @Input() pseudo: string = "";
+  @Input() username: string = "";
+  title= "Minecraft Server";
+  error? : string;
 
-  title= "Minecraft Server"
+  minecraftApiUrl = "https://api.minecraft.id/gateway/start/";
 
   constructor(
+    private route: ActivatedRoute,
     private router: Router,
     private playerSessionService: PlayerSessionService,
+    private http: HttpClient,
+    private authErrors: AuthErrorsService,
   ) { }
 
   ngOnInit(): void {
+    this.getParameter();
   }
 
-  onValid() {
-    this.playerSessionService.login(this.pseudo);
-    let session = this.playerSessionService.getSession();
-    //alert(`${this.pseudo}, ${session.token} ${session.access}`);
-    this.router.navigateByUrl("/accueil");
+  getParameter() {
+    var paramsObject : any;
+    this.route.queryParamMap
+      .subscribe((params) => {
+        paramsObject = { ...params.keys, ...params };
+      }
+    );
+    var re = / /gi;
+    this.error = this.authErrors.getErrorMessage(paramsObject?.params?.error?.replace(re, "_"));
   }
 
+  getCallback() {
+    return (window.location.href.split("login"))[0] + "mc-auth";
+  }
+
+  onSubmit(form: any, e: any) {
+    sessionStorage.setItem("username", this.username);
+    e.target.submit();
+  }
 }

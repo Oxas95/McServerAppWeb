@@ -1,0 +1,37 @@
+h3 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+table {
+    width: 95%;
+    margin: auto auto;
+    transform: translateX(-0.5vw);
+}
+
+td {
+    font-size: 2vw;
+}
+
+td[class="mc-text"] {
+    text-align: left;
+    width: 70%;
+}
+
+td[class="input-td"] {
+    text-align: right;
+}
+
+td[colspan="2"] {
+    padding-top: 2vw;
+    text-align: center;
+}
+
+.mc-input {
+    text-align: left;
+    width: 100%;
+}
+
+button {
+    width: 60%;
+}

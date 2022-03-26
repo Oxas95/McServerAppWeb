@@ -4,17 +4,18 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
+  /*border: red 1px solid;*/
 }
 
 body {
-  /*background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2F2020-08-08_16.57.58.png?v=1596898855508);
+  background-image: url(https://cdn.glitch.com/92f5f52c-c4ae-45d2-a31e-6069c591615c%2F2020-08-08_16.57.58.png?v=1596898855508);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;*/
-  background: cyan;
+  background-attachment: fixed;
+  /*background: cyan;*/
   overflow: scroll;
 }
 

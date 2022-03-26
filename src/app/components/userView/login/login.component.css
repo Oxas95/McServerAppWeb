@@ -4,42 +4,40 @@ div {
 }
 
 #mc-page {
-    max-width: 800px;
     width: 70%;
-    height: 100%;
+    margin-bottom: 5%;
 }
 
 #title-container {
     width: 100%;
-    max-width: 100%;
 }
 
 .mc-input {
     width: 70%;
-    max-width: 600px;
-    font-size: 2vw;
-    padding: 2% 5% 2%;
+    margin-bottom: 2vw;
 }
 
 .mc-button {
     width: 45%;
-    max-width: 400px;
-    font-size: 2vw;
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     margin-bottom: calc(2vh + 2vw);
 }
 
 h2 {
-    font-size: 4vw;
-    padding-top: calc(2vw + 1vh);
-    padding-bottom: 2vw;
+    font-size: 5vw;
+    margin-top: calc(2vw + 1vh);
+    margin-bottom: 2vw;
 }
 
 p {
+    width: 70%;
     font-size: 2vw;
+    margin: auto;
+    margin-bottom: 2vw;
+    color: red;
 }
 
 @media screen and (max-width: 775px) {
